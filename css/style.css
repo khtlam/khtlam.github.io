@@ -1,0 +1,340 @@
+/* responsive text */
+
+@import "bootstrap";
+
+
+::-webkit-scrollbar {
+  float: right;
+  background: #F5F5F5;
+
+}
+
+::-webkit-scrollbar-track {
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+background-color: #F5F5F5;
+border-radius: 10px; }
+
+::-webkit-scrollbar {
+width: 12px;
+background-color: #F5F5F5; }
+
+::-webkit-scrollbar-thumb {
+border-radius: 10px;
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+background-image: -webkit-linear-gradient(330deg, #d4fc79 0%, #96e6a1 100%);
+background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  }
+
+p, q, button{
+  font-family: 'Quicksand', sans-serif;
+}
+
+q{
+  font-style: italic;
+}
+html {
+  font-size: 1rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 768px) {
+
+    .display-4 {
+        font-size: 3rem;
+        font-weight: 350;
+        line-height: 1.0;
+    }
+
+   
+}
+
+@media screen and (min-width: 1000px) { 
+  .rwd-break { display: none; }
+  
+
+}
+
+
+@media screen and (max-width: 767px) {
+  .card-columns {
+  column-count: 2;
+}
+   .contactInfo { background: rgba(189,183,107, 1);
+    width: 100%; 
+   }
+   .info-wrap .col-md-3{
+    padding-left: 15px;
+   }  
+  .currentTeachingCard{
+    padding-left: -100px;
+    padding-right: -100px;
+   }
+
+}
+
+@media screen and (min-width: 768px) {
+.card-columns {
+  column-count: 3;
+}
+.moreAboutMe {
+  border-left: 4px solid #c39f76;
+  border-color: #c0a375;
+}
+
+.info-wrap {
+  background: rgba(189,183,107, 0.7);
+  margin-top: -30px;
+  border-radius: 20px;
+  padding: 20px 20px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 10px 10px rgba(153, 153, 153, 0.7);
+  border: 1px solid rgba(214, 214, 214, 0.11); }
+  .tab-content{
+  padding-left: 55px;
+  padding-right: 55px;
+  }
+  @media (max-width: 991px) {
+  .info-wrap {
+      padding: 10px 0;
+      margin-top: -32px; } }
+  
+}
+
+.currentTeachingCard{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
+
+.divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.biography-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+section {
+  padding: 20px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    text-transform: uppercase;
+}
+#links {
+    background: #5A5A5A !important;
+}
+#links h5{
+  padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    color:#ffffff;
+}
+#links a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#links ul.social li{
+  padding: 3px 0;
+}
+#links ul.social li a i {
+    margin-right: 5px;
+  font-size:25px;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .5s all ease;
+}
+#links ul.social li:hover a i {
+  font-size:30px;
+  margin-top:-10px;
+}
+#links ul.social li a,
+#links ul.quick-links li a{
+  color:#ffffff;
+}
+#links ul.social li a:hover{
+  color:#eeeeee;
+}
+#links ul.quick-links li{
+  padding: 3px 0;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .5s all ease;
+}
+#links ul.quick-links li:hover{
+  padding: 3px 0;
+  margin-left:5px;
+  font-weight:700;
+}
+#links ul.quick-links li a i{
+  margin-right: 5px;
+}
+#links ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+  #links h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
+#footer {
+    background: #1B3663 !important;
+}
+#footer h5{
+    padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+  padding: 3px 0;
+}
+#footer ul.social li a i {
+  margin-right: 5px;
+  font-size:25px;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+  font-size:30px;
+  margin-top:-10px;
+}
+#footer ul.social li a,
+
+#footer ul.social li a:hover{
+  color:#eeeeee;
+}
+
+
+@media (max-width:767px){
+  #footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
+
+.moreAboutMe h6 {
+  text-decoration: underline rgb(128,128,128);
+}
+
+.time { width: 17%; }
+.day { width: 13%; text-align: center; }
+.SessionNumber {width: 5%;}
+
+@media (max-width: 529px) {
+    .card-columns {
+        column-count: 1;
+    }
+}
+
+@media (min-width: 530px) {
+    .card-columns {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-columns {
+        column-count: 3;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-columns {
+        column-count: 4;
+    }
+}
+
+.past-teaching .card-columns .card {
+  background-color: rgb(204, 204, 204);
+}
+
+.past-teaching .card-columns .card .card-title{
+    
+  }
+.past-teaching .card-columns .card .card-subtitle{
+    color: white;
+  }
+  .past-teaching .card-columns .card .card-text{
+
+  }
+  .past-teaching .card-columns .card .card-date{
+    color: white;
+  }
+
+  /* Animation */
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+.item.next .carousel-caption {
+    opacity: 0;
+}
+
+.carousel-caption {
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
