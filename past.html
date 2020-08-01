@@ -1,4 +1,51 @@
 <!-- Past Teaching -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Terry Ka-Hin LAM</title>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Mathematics & STEM Teacher; B.Sc., Mathematics (Computer Science Track), The Hong Kong University of Science and Technology">
+  <meta name="keywords" 
+      content="terry lam, stem, mathematics"> 
+  <meta name="author" content="LAM, Ka Hin Terry">
+  <link rel="shortcut icon" href="img/painting.ico">
+  
+  <!-- favicon -->
+  
+  <!-- web-fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya|Noto+Sans+TC|Nunito|Quicksand|Roboto|Titillium+Web" rel="stylesheet">
+  <!--Font-awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <!-- Responsive Web-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Custom fonts for this template -->
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  
+  <!-- owl carousal -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" rel='stylesheet' />
+
+  <!-- Style CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+</head>
+
+<body>
 <div class="past-teaching animated animatedFadeInUp fadeInUp" style="background-color: #F4F3E4; margin-top: -1em; padding-bottom: 30px">
 
   <h2 class="featurette-heading" style="text-align: center; font-family: Alegreya"> Past Teaching / Duties </h2>
@@ -173,3 +220,27 @@
         </div> 
 </div>
 </div>
+<script>
+ 
+  $(document).ready(function(){    
+   var scroll_start = 0;
+   var startchange = $('#startchange');
+   var offset = startchange.offset();
+    $('[data-toggle="popover"]').popover();   
+   if (startchange.length){
+     $(document).scroll(function() { 
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+        $(".navbar").css('background-color', '#e3f2fd');
+      } else {
+        $('.navbar').css('background-color', 'transparent');
+      }
+    });
+   }
+ });
+                
+</script>
+
+</body>
+
+</html>
